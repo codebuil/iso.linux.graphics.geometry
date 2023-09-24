@@ -222,7 +222,7 @@ void invertScreen() {
 		
 		memoryStart = (unsigned char *)0x200000;
 		for (n=0;n<199;n=n+1)   
-			hline(0,n,n,9);
+			hline(160-n/2,n,160+n/2,9);
 
 		return 0;	  
         }
